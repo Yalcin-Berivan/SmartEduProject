@@ -8,12 +8,12 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
   res.status(200).render("about",{
     page_name:"about"
-  });
+     });
+});
 app.get("/", (req, res) => {
     res.status(200).render("index",{
         page_name:"index"
     });
-  });
 });
 const port = 3000;
 app.listen(port, () => {
